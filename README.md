@@ -2,7 +2,8 @@
 
 ## how to use this package
 ### 1. Install Reuqirements
-```sudo apt-get install ros-melodic-cmake-modules python-wstool python-catkin-tools libyaml-cpp-dev protobuf-compiler autoconf
+```
+sudo apt-get install ros-melodic-cmake-modules python-wstool python-catkin-tools libyaml-cpp-dev protobuf-compiler autoconf
 ```
 
 

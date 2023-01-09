@@ -19,10 +19,27 @@ wstool update
 init : when you first use wstool
 merge -t : when you already used wstool before
 
-3. Compile
+3. git clone extra need packages
+```
+cd ~/catkin_ws/src
+git clone https://github.com/ethz-asl/protobuf_catkin.git
+```
+
+4. modify little source code a little
+```
+cd ~/catkin_ws/src/mav_voxblox_planning/voxblox_skeleton/src/io/
+vi skeleton_io.cpp
+```
+[IMPORTANT] Go to line 69, which will be
+`uint32_t tmp_byte_offset = 0;`
+And Change above line to below line
+`uint64_t tmp_byte_offset = 0`
+
+
+5. Compile
 ```
 cd ~/catkin_ws/
-catkin build mav_voxblox_planning
+catkin build
 ```
 
 ==================================================================================================

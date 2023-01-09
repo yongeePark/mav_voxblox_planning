@@ -1,11 +1,28 @@
 # Jaeyong Edited here
 
 ## how to use this package
-### 1. Install Reuqirements
+1. Install Requirements
 ```
 sudo apt-get install ros-melodic-cmake-modules python-wstool python-catkin-tools libyaml-cpp-dev protobuf-compiler autoconf
 ```
+2. Set up and git clone
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws
+catkin init
+cd ~/catkin_ws/src/
+git clone git@github.com:yongeePark/mav_voxblox_planning.git
+wstool init . ./mav_voxblox_planning/install/install_ssh.rosinstall
+wstool update
+```
 
+3. Compile
+```
+cd ~/catkin_ws/
+catkin build mav_voxblox_planning
+```
+
+==================================================================================================
 
 <img src="https://user-images.githubusercontent.com/5616392/46147990-47fd4200-c267-11e8-8d04-80f74b8673e3.png" alt="mav_voxblox_planning_logo" width="400">
 

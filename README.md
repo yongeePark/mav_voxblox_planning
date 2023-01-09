@@ -1,3 +1,11 @@
+# Jaeyong Edited here
+
+## how to use this package
+### 1. Install Reuqirements
+```sudo apt-get install ros-melodic-cmake-modules python-wstool python-catkin-tools libyaml-cpp-dev protobuf-compiler autoconf
+```
+
+
 <img src="https://user-images.githubusercontent.com/5616392/46147990-47fd4200-c267-11e8-8d04-80f74b8673e3.png" alt="mav_voxblox_planning_logo" width="400">
 
 MAV planning tools using voxblox as the map representation.

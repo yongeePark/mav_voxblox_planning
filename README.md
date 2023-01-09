@@ -31,8 +31,10 @@ cd ~/catkin_ws/src/mav_voxblox_planning/voxblox_skeleton/src/io/
 vi skeleton_io.cpp
 ```
 [IMPORTANT] Go to line 69, which will be
+
 `uint32_t tmp_byte_offset = 0;`
 And Change above line to below line
+
 `uint64_t tmp_byte_offset = 0`
 
 

@@ -32,8 +32,8 @@ vi skeleton_io.cpp
 ```
 [IMPORTANT] Go to line 69, which will be
 
-`uint32_t tmp_byte_offset = 0;
-`
+`uint32_t tmp_byte_offset = 0;`
+
 And Change above line to below line
 
 `uint64_t tmp_byte_offset = 0;`
@@ -43,7 +43,7 @@ And Change above line to below line
 5. Compile
 ```
 cd ~/catkin_ws/
-catkin build
+catkin build mav_voxblox_planning
 ```
 
 ==================================================================================================

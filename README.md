@@ -12,7 +12,8 @@ cd ~/catkin_ws
 catkin init
 cd ~/catkin_ws/src/
 git clone git@github.com:yongeePark/mav_voxblox_planning.git
-wstool init . ./mav_voxblox_planning/install/install_ssh.rosinstall
+#wstool init . ./mav_voxblox_planning/install/install_ssh.rosinstall
+wstool merge -t . ./mav_voxblox_planning/install/install_ssh.rosinstall
 wstool update
 ```
 

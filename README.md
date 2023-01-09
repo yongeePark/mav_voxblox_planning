@@ -46,6 +46,33 @@ cd ~/catkin_ws/
 catkin build mav_voxblox_planning
 ```
 
+6. Download the maps
+http://robotics.ethz.ch/~asl-datasets/2018_mav_voxblox_planning/
+Download `mav_voxblox_planning_maps.zip`
+Move the maps to the ~/planner_maps
+
+7. Run
+```
+roslaunch voxblox_rrt_planner scout.launch
+rviz
+```
+
+8. Modify Rviz
+* Add Panels
+    - `Panels -> Add New Panel`
+    - mav_planning_rviz -> PlanningPanel
+* Add topics
+    - /voxblox_rrt_planner/mesh ( Map )
+    - /voxblox_rrt_planner/path ( Path )
+    - /planning_markers/update ( InteractiveMarkers )
+* modify panels
+    - Planner name : `voxblox_rrt_planner`
+
+9. Run the planner
+* Press Edit buttion to move start & goal
+* z should be bigger than 0
+* Decide start & and goal position, and press `Planner Service` to run the planner.
+
 ==================================================================================================
 
 <img src="https://user-images.githubusercontent.com/5616392/46147990-47fd4200-c267-11e8-8d04-80f74b8673e3.png" alt="mav_voxblox_planning_logo" width="400">

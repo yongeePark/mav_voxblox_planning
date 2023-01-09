@@ -32,10 +32,12 @@ vi skeleton_io.cpp
 ```
 [IMPORTANT] Go to line 69, which will be
 
-`uint32_t tmp_byte_offset = 0;`
+`uint32_t tmp_byte_offset = 0;
+`
 And Change above line to below line
 
-`uint64_t tmp_byte_offset = 0`
+`uint64_t tmp_byte_offset = 0;`
+
 
 
 5. Compile
